@@ -5,6 +5,7 @@
 }
 body{
   background-color: #201f32;
+
   font-family: "Roboto", serif;
 }
 @font-face {
@@ -19,7 +20,7 @@ body{
   font-weight: normal;
   src: local('Trajan Pro Bold'), url('TrajanPro-Bold.woff') format('woff');
 }
-.link-container ul li, section .container h2{
+.link-container ul li, section .container h2, section h2, .link-container ul li{
   font-family:'Trajan Pro Regular';
 }
 header{
@@ -42,8 +43,7 @@ header nav .container{
 }
 .link-container ul li{
   display: inline;
-  margin-left: 24px;
-  font-family:'Trajan Pro Regular';
+  margin-left: 16px;
   font-weight: bold;
   font-size:24px
 }
@@ -51,12 +51,16 @@ header nav .container{
   text-decoration: none;
   color: #fff;
 }
-section .container .section-img-container img{
+.link-container ul li a:hover{
+  text-decoration: underline;
+  color: #a298af;
+}
+section .container .section-about-img-container img{
   height: 420px;
 }
 section .container{
   display: flex;
-  padding-top: 16px;
+  padding-top: 36px;
   align-items: flex-start;
 }
 section .container h2{
@@ -67,6 +71,32 @@ section .container h2{
 }
 section .container p{
   font-size: 22px;
-
   color: #fff;
+}
+.sectin-game-img-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 15px;
+}
+section h2{
+  color: #fff;
+  text-align: center;
+}
+.sectin-game-img-container img{
+  height: 220px;
+  margin-bottom: 18px;
+}
+#about-us{
+  margin-top: 64px;
+}
+#about-us .container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: right;
+}
+#team-cherry-logo{
+  height: 310px;
 }
