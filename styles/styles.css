@@ -3,9 +3,70 @@
   padding: 0;
   margin: 0;
 }
+body{
+  background-color: #201f32;
+  font-family: "Roboto", serif;
+}
+@font-face {
+  font-family: 'Trajan Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Trajan Pro Regular'), url('TrajanPro-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Trajan Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Trajan Pro Bold'), url('TrajanPro-Bold.woff') format('woff');
+}
+.link-container ul li, section .container h2{
+  font-family:'Trajan Pro Regular';
+}
 header{
-  background-color: #1c1b2b;
+  padding: 16px 0;
+  background-color: #2f2f46;
+  color: #fff;
+}
+.container{
+  margin: 0 auto;
   max-width: 1280px;
   width: 100%;
-  height: 50px;
+}
+header nav .container .nav-img-container img{
+  height: 72px;
+}
+header nav .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link-container ul li{
+  display: inline;
+  margin-left: 24px;
+  font-family:'Trajan Pro Regular';
+  font-weight: bold;
+  font-size:24px
+}
+.link-container ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+section .container .section-img-container img{
+  height: 420px;
+}
+section .container{
+  display: flex;
+  padding-top: 16px;
+  align-items: flex-start;
+}
+section .container h2{
+  text-align: center;
+  color: #fff;
+  margin: 12px 0 38px 0;
+  align-self: flex-start
+}
+section .container p{
+  font-size: 22px;
+
+  color: #fff;
 }
